@@ -203,6 +203,8 @@ code .fen{
 	color:#f92672;
 }
 
+
+/* 示例的样式，蓝边灰底 */
 .article .section .sec-font-item .example{
 	display: block;
 	width: 100%;
