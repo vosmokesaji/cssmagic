@@ -1,0 +1,264 @@
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    border: none;
+}
+ol,
+ul,
+li
+{
+    list-style: none;
+}
+@font-face{
+    font-family: 'Myriad Set Pro';
+    font-weight: 100;
+    font-style: normal;
+    src: local('Myriad Set Pro'), url('../fonts/myriad-set-pro_thin.woff') format('woff'), format('truetype');
+}
+ @font-face{
+ 	font-family: 'Source Code';
+    font-weight: 100;
+    font-style: normal;
+    src: local('Source Code'), url('../fonts/Source Code Pro.woff') format('woff'), format('truetype');
+} 
+/* 头部 start */
+.qt-w1100
+{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.qt-w1200
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix:after
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: inline-block;
+
+    width: 100%;
+
+    content: '';
+}
+.nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+.nav .nav-list
+{
+    height: 100%;
+
+    text-align: justify;
+    -moz-user-select:none;  /* 屏蔽双击选中 FF */
+}
+.nav .nav-list .nav-item
+{
+    font-family: 'Myriad Set Pro','Microsoft YaHei';
+    font-size:16px;
+    font-weight: 100;
+    line-height: 50px;
+
+    display: inline-block;
+
+    height: 100%;
+    padding: 0 10px;
+
+    cursor: pointer;
+    transition: opacity .3s ease-out;
+
+    color: #fff;
+}
+.nav .nav-list .nav-item:hover
+{
+    opacity: .6	;
+}
+/* 头部 end */
+
+
+/* 主体 start */
+.article
+{
+    padding:50px 0 20px;
+	font-family: 'Source Code Pro','Myriad Set Pro','Microsoft YaHei',sans-serif;
+}
+.article .section{
+	width:100%;
+	padding:20px;
+	box-sizing: border-box;
+	margin-bottom:20px;
+}
+.article .section h1{
+	font-size:28px;
+	text-align: center;
+	padding:20px 0;
+}
+.article .section .sec-font-item{
+	padding:0 0 20px;
+}
+.article .section .sec-font-item h2{
+	font-size:24px;
+}
+.article .section .sec-font-item .desc{
+	line-height:22px;
+	padding:10px 0;
+}
+.article .section .sec-font-item .desc span{
+	font-size:18px;
+	line-height: 30px;
+}
+.article .section .sec-font-item .desc .light{
+	color:#01b5e2;
+}
+.article .section .sec-font-item code{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size:20px;
+	background: #272822;
+	padding:10px 30px 20px;
+	border-left:6px solid #f92672;
+	font-family: 'Source Code Pro','Microsoft YaHei',sans-serif;
+	border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.article .section .sec-font-item code .hd{
+	font-size:22px;
+	line-height:34px;
+	color:#f8f8f2;
+}
+.article .section .sec-font-item code span{
+	line-height: 24px;
+}
+code .comment{
+	color:#75715e;
+}
+code .lv{
+	color:#a6e22e;
+}
+code .lan{
+	color:#66d9ef;
+}
+code .bai{
+	color:#f8f8f2;
+}
+code .zi{
+	color:#ae81ff;
+}
+code .huang{
+	color:#e6db74;
+}
+code .fen{
+	color:#f92672;
+}
+
+.article .section .sec-font-item .example{
+	display: block;
+	width: 100%;
+	margin-top:30px;
+	box-sizing: border-box;
+	padding:20px 30px 20px;
+	background: #eee;
+	border-left:6px solid #558abb;
+	border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.font-size .example .fs-xx-small{
+	font-size: xx-small;
+}
+.font-size .example .fs-x-small{
+	font-size: x-small;
+}
+.font-size .example .fs-small{
+	font-size: small;
+}
+.font-size .example .fs-medium{
+	font-size: medium;
+}
+.font-size .example .fs-large{
+	font-size: large;
+}
+.font-size .example .fs-x-large{
+	font-size: x-large;
+}
+.font-size .example .fs-xx-large{
+	font-size: xx-large;
+}
+
+.font-size .example .em2{
+	font-size:2em;
+}
+.font-size .example .rem2{
+	font-size:2rem;
+}
+.font-size .example .px24{
+	font-size:24px;
+}
+.font-size .example .per120{
+	font-size:120%;
+}
+
+.font-style .example .normal{
+	font-style: normal;
+}
+.font-style .example .italic{
+	font-style: italic;
+}
+.font-style .example .oblique{
+	font-style: oblique;
+}
+
+
+/* 主体 end */
