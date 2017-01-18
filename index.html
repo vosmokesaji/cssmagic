@@ -207,6 +207,53 @@
                     <div class="text-decoration-underover">This word is under and over.</div>
                 </div>
             </li>   
+
+            <li class="sec-font-item text-decoration">
+                <h2>5. color</h2>
+                <div class="desc">说明：文本颜色
+                    <span class="light">（可以继承，能用于css动画）</span><br>
+                    <span>1. 这个 CSS 属性是用于设置文本颜色<br>
+                    2. 值：<br>
+                    · red : 表示颜色的单词<br>
+                    · #ff00cc : 16进制RGB<br>
+                    · #f0c : 16进制RGB简写（用一位代替重复的两位）<br>
+                    · rgb(255,255,255) : RGB数值<br>
+                    · rgba(255,255,255,0.3) : RGB数值带透明度。<br>
+                    · hsl(0, 100%, 50%) : hsl数值（H：色相，取值0~360,0或360是红色，240是蓝色；S：饱和度，取值0%~100%；L：亮度，取值0%~100%）。<br>
+                    · hsla(0, 100%, 50%,0.3) : hsl数值带透明度。<br>
+                </div>
+                <pre class="prettyprint">
+&lt;style&gt;.color-red {
+    color : red ;
+}
+.color-cc00ff {
+    color : #cc00ff ;
+}
+.color-c0f {
+    color : #c0f ;
+}
+.color-rgb {
+    color : rgb(105,5,255) ;
+}
+.color-rgba {
+    color : rgba(105,5,255,0.5) ;
+}
+.color-hsl {
+    color : hsl(80, 100%, 50%) ;
+}
+.color-hsla {
+    color : hsla(80, 100%, 50%,0.5) ;
+}&lt;/style&gt;</pre>
+                <div class="example">
+                    <div class="color-red">This Color is red.</div>
+                    <div class="color-cc00ff">This Color is cc00ff.</div>
+                    <div class="color-c0f">This Color is c0f.</div>
+                    <div class="color-rgb">This Color is rgb.</div>
+                    <div class="color-rgba">This Color is rgba.</div>
+                    <div class="color-hsl">This Color is hsl.</div>
+                    <div class="color-hsla">This Color is hsla.</div>
+                </div>
+            </li>
         </ul>
     </div>  
     <div class="footer"></div>

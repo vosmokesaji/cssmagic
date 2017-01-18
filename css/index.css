@@ -255,21 +255,21 @@ code .fen{
 }
 
 /* font-style */
-.font-style .example .font-style-normal{
+.font-style-normal{
 	font-style: normal;
 }
-.font-style .example .font-style-italic{
+.font-style-italic{
 	font-style: italic;
 }
-.font-style .example .font-style-oblique{
+.font-style-oblique{
 	font-style: oblique;
 }
 
 /* font-weight */
-.font-weight .example .font-weight-normal{
+.font-weight-normal{
 	font-weight: normal;
 }
-.font-weight .example .font-weight-bold{
+.font-weight-bold{
 	font-weight: bold;
 }
 
@@ -277,18 +277,40 @@ code .fen{
 .text-decoration .example {
 	line-height: 36px;
 }
-.text-decoration .example .text-decoration-underline {
+.text-decoration-underline {
     text-decoration : underline ;
 }
-.text-decoration .example .text-decoration-overline {
+.text-decoration-overline {
     text-decoration : overline ;
 }
-.text-decoration .example .text-decoration-none {
+.text-decoration-none {
     text-decoration : none ;
 }
-.text-decoration .example .text-decoration-underover {
+.text-decoration-underover {
     text-decoration : underline overline ;
 }
 
+/* color */
+.color-red {
+    color : red ;
+}
+.color-cc00ff {
+    color : #cc00ff ;
+}
+.color-c0f {
+    color : #c0f ;
+}
+.color-rgb {
+    color : rgb(105,5,255) ;
+}
+.color-rgba {
+    color : rgba(105,5,255,0.5) ;
+}
+.color-hsl {
+    color : hsl(200, 100%, 50%) ;
+}
+.color-hsla {
+    color : hsla(200, 100%, 50%,0.5) ;
+}
 
 /* 主体 end */
