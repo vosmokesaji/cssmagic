@@ -11,7 +11,7 @@
     <div class="nav" onselectstart="return false">
     <!-- 屏蔽双击选中 除了FF的浏览器  用这种方法 -->
         <ul class="nav-list qt-w1100 clearfix">
-            <li class="nav-item nav-fonts" title="文字">Font</li>
+            <li class="nav-item nav-fonts" title="文字" data-for="Font">Font</li>
             <li class="nav-item nav-background" title="背景">Back</li>
             <li class="nav-item nav-text" title="文本">Text</li>
             <li class="nav-item nav-position" title="位置">Posit</li>
@@ -23,7 +23,7 @@
     </div>
     <div class="article qt-w1200">      
         <ul class="section clearfix sec-font-list">
-            <h1>$ 文字样式 $</h1>
+            <h1 id="Font">$ 文字样式 $</h1>
             <li class="sec-font-item font-family">
                 <h2>1. font-family</h2>
                 <p class="desc">说明：设置字体
@@ -111,10 +111,10 @@
             </li>
 
             <li class="sec-font-item font-style">
-                <h2>2. font-style</h2>
+                <h2>3. font-style</h2>
                 <div class="desc">说明：文字斜体
                     <span class="light">（可以继承，不能用于css动画）</span><br>
-                    <span>1.斜体；<br>
+                    <span>1. 斜体；<br>
                     2. 值：<br>
                     · normal: 选择
                     <span class="light">font-family</span>
@@ -123,24 +123,88 @@
                     · oblique: 选择倾斜体，如果当前字体没有可用的倾斜体版本，会选用斜体（ italic ）替代;<br>
                 </div>
                 <pre class="prettyprint">
-&lt;style&gt;/* 绝对大小值 */
+&lt;style&gt;/* 常规字体 */
 .normal {
     font-style : normal ;
 }
-/* 绝对大小值 */
+/* 斜体 */
 .italic {
     font-style : italic ;
 }
-/* 绝对大小值 */
+/* 倾斜提 */
 .oblique {
     font-style : oblique ;
 }
 &lt;/style&gt;</pre>
-
                 <div class="example">
-                    <div class="normal">This word is normal.</div>
-                    <div class="italic">This word is italic.</div>
-                    <div class="oblique">This word is oblique.</div>
+                    <div class="font-style-normal">This word is normal.</div>
+                    <div class="font-style-italic">This word is italic.</div>
+                    <div class="font-style-oblique">This word is oblique.</div>
+                </div>
+            </li>
+
+            <li class="sec-font-item font-weight">
+                <h2>4. font-weight</h2>
+                <div class="desc">说明：字体粗细
+                    <span class="light">（可以继承，能用于css动画）</span><br>
+                    <span>1. 一些字体只提供 normal 和 bold 两种值；<br>
+                    2. 值：<br>
+                    · normal: 正常粗细。与400等值。<br>
+                    · bold: 加粗。 与700等值。<br>
+                    · lighter: 比从父元素继承来的值更细(处在字体可行的粗细值范围内)。<br>
+                    · bolder: 比从父元素继承来的值更粗 (处在字体可行的粗细值范围内)。<br>
+                    · 100, 200, 300, 400, 500, 600, 700, 800, 900: 数值化的规定字体粗细成都的方式，提供了除了 normal 和 bold 之外更多的值。
+                </div>
+                <pre class="prettyprint">
+&lt;style&gt;/* 常规字体 */
+.normal {
+    font-weight : normal ;
+}
+/* 粗体 */
+.bold {
+    font-weight : bold ;
+};&lt;/style&gt;</pre>
+                <div class="example">
+                    <div class="font-weight-normal">This word is normal.</div>
+                    <div class="font-weight-bold">This word is bold.</div>
+                </div>
+            </li>
+
+            <li class="sec-font-item text-decoration">
+                <h2>5. text-decoration</h2>
+                <div class="desc">说明：文本修饰
+                    <span class="light">（不可以继承，能不能用于css动画？）</span><br>
+                    <span>1. 这个 CSS 属性是用于设置文本排版（下划线、顶划线、删除线或者闪烁）。下划线和顶划线修饰于文本的下部，删除线位于文本之上。<br>
+                    2. 文本修饰属性会延伸到后代元素。这意味着如果祖先元素指定了文本修饰属性，后代元素则不能将其删除。<br>
+                    例如，在如下标记中 &lt;p&gt;This text has &lt;em&gt;some emphasized words&lt;/em&gt; in it.&lt;/p&gt;<br>
+                    应用样式p { text-decoration: underline } 会对整个段落添加下划线，再添加样式 em { text-decoration: none } 则不会引起任何改变；整个段落仍然有下划线修饰。然而，新加样式 em { text-decoration: overline } 则会在&lt;em&gt;标记的文字上添加另一种新样式。<br>
+                    3. 值：<br>
+                    · underline: 下划线<br>
+                    · overline: 上划线<br>
+                    · line-through: 删除线（中划线）<br>
+                    · none: 无<br>
+                    · underline 和 overline 可以同时存在。
+                </div>
+                <pre class="prettyprint">
+&lt;style&gt;/* 常规字体 */
+.underline {
+    text-decoration : underline ;
+}
+/* 粗体 */
+.overline {
+    text-decoration : overline ;
+/* 粗体 */
+.none {
+    text-decoration : none ;
+/* 粗体 */
+.underover {
+    text-decoration : underline overline ;
+};&lt;/style&gt;</pre>
+                <div class="example">
+                    <div class="text-decoration-underline">This word is underline.</div>
+                    <div class="text-decoration-overline">This word is overline.</div>
+                    <div class="text-decoration-none">This word is none.</div>
+                    <div class="text-decoration-underover">This word is under and over.</div>
                 </div>
             </li>   
         </ul>
