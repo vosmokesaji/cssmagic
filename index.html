@@ -131,7 +131,7 @@
 .italic {
     font-style : italic ;
 }
-/* 倾斜提 */
+/* 倾斜体 */
 .oblique {
     font-style : oblique ;
 }
@@ -209,7 +209,7 @@
             </li>   
 
             <li class="sec-font-item text-decoration">
-                <h2>5. color</h2>
+                <h2>6. color</h2>
                 <div class="desc">说明：文本颜色
                     <span class="light">（可以继承，能用于css动画）</span><br>
                     <span>1. 这个 CSS 属性是用于设置文本颜色<br>
@@ -253,6 +253,35 @@
                     <div class="color-hsl">This Color is hsl.</div>
                     <div class="color-hsla">This Color is hsla.</div>
                 </div>
+            </li>
+        </ul>
+
+
+
+        <ul class="section clearfix sec-font-list">
+            <h1 id="Font">$ 背景样式 $</h1>
+            <li class="sec-font-item font-family">
+                <h2>1. font-family</h2>
+                <p class="desc">说明：设置字体
+                    <span class="light">（可以继承，不能用于css动画）</span><br>
+                    <span>1. 当指定多种字体时用","分隔每种字体的名称；<br>
+                    2. 当一个字体名称包含两个以上的单词时，要用引号把字体名包起来:
+                    <span class="light">font-family:'Myriad Set Pro','Microsoft YaHei';</span> ；<br>
+                    3. 浏览器会选择列表中第一个该计算机上有安装的字体，或者是通过 
+                    <span class="light">@font-face</span> 
+                    指定的可以直接下载的字体；<br>
+                    4. 网页作者应当至少在font-family列表中添加一个通用的
+                    <span class="light">字体族名</span> 
+                    ，因为无法保证用户的计算机内已经安装了指定的字体，也不能保证使用@font-face提供的字体能够正确地下载。提供通用的字体族使得浏览器可以在无法得到最佳字体的情况下使用一个相对接近的备选字体。
+                </p>
+                <pre class="prettyprint">
+&lt;style&gt;.box{
+    /* 一个字体名和一个通用的字体族名 */
+    font-family : 'Microsoft YaHei',sans-serif;
+    /* 多个字体名和一个通用的字体族名 */
+    font-family : 'Source Code Pro','Microsoft YaHei',sans-serif;
+}
+&lt;/style&gt;</pre>
             </li>
         </ul>
     </div>  
