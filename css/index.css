@@ -318,13 +318,10 @@ code .fen{
 
 
 .background-image-example{
-	background-image: url(../images/001.gif);
-	height:264px;
-	font-size: 36px;
-	line-height: 264px;
-	text-align: center;
+	background-image: url(../images/cut.gif);
+	height:141px;
 	color:#fff;
 	font-weight: bold;
-	text-shadow: 0 0 6px #000;
+	text-shadow: 0 0 3px #000;
 }
 /* 主体 end */
