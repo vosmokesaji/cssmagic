@@ -139,6 +139,9 @@ li
 	box-sizing: border-box;
 	margin-bottom:20px;
 }
+.article .section+.section{
+	margin-top:-100px;
+}
 .article .section h1{
 	font-size:28px;
 	text-align: center;
@@ -313,4 +316,15 @@ code .fen{
     color : hsla(200, 100%, 50%,0.5) ;
 }
 
+
+.background-image-example{
+	background-image: url(../images/cut.gif);
+	height:141px;
+	font-size: 36px;
+	line-height: 141px;
+	text-align: center;
+	color:#fff;
+	font-weight: bold;
+	text-shadow: 0 0 6px #000;
+}
 /* 主体 end */
